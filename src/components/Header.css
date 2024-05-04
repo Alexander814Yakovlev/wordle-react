@@ -1,0 +1,45 @@
+.nav__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #000000;
+}
+
+.small-tile {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: default;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.btn {
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--main-text);
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:active {
+    transform: translate(1px, 1px);
+}

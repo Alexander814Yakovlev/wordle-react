@@ -1,0 +1,42 @@
+.keyboard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+    width: 100%;
+    height: 7vh;
+}
+
+.keyboard-tile {
+    height: 100%;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-text);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--main-text);
+    background-color: var(--tile-bg);
+}
+
+.keyboard-tile:active {
+    transform: translate(1px, 1px);
+}
+
+#backspace {
+    background-color: #f83535c9;
+    width: 11%;
+}
+
+#enter {
+    background-color: #3bfd21cc;
+    width: 11%;
+}

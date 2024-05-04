@@ -1,0 +1,17 @@
+.stats__info {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stats__tile {
+    text-align: center;
+    background-color: var(--tile-bg);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.stats__tile_icon {
+    font-size: 40px;
+}

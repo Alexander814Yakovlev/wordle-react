@@ -1,0 +1,25 @@
+.rules {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: var(--tile-bg);
+    border-radius: 8px;
+    height: fit-content;
+    overflow: scroll;
+}
+
+.rules__section {
+    border-bottom: 1px solid var(--main-text);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.rules__section>p {
+    margin-bottom: 10px;
+}
+
+.rules__row {
+    height: 5vh;
+    width: 65%;
+    gap: 3px;
+    margin-bottom: 10px;
+}

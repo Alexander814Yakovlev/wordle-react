@@ -1,0 +1,41 @@
+.main__board {
+    height: 60%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    height: calc(100% / 6);
+    max-width: 420px;
+}
+
+.board-tile {
+    border: 1px solid var(--accent-bg);
+    border-radius: 5px;
+    height: 100%;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: default;
+    color: var(--main-text);
+    background-color: var(--tile-bg);
+    box-shadow: 0 0 12px var(--accent-bg) inset;
+}
+
+.flip-tile {
+    transform: rotateX(360deg);
+    transform-style: preserve-3d;
+    transition: 0.9s;
+}

@@ -1,0 +1,61 @@
+@keyframes slide-up {
+    0% {
+        top: -50px;
+    }
+
+    80% {
+        top: 50px;
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+.modal {
+    position: absolute;
+    display: none;
+}
+
+.modal-active {
+    display: block;
+    padding: 20px 10px;
+    left: 10%;
+    width: 80%;
+    top: 30px;
+    max-height: 80vh;
+    background-color: var(--main-bg);
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #848484d1;
+    animation: slide-up 0.3s ease-in-out 1;
+}
+
+.modal__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.modal__header {
+    text-transform: uppercase;
+}
+
+.modal__theWord {
+    text-transform: uppercase;
+}
+
+.modal__definition {
+    list-style: decimal;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+
+.modal__button {
+    height: 40px;
+    min-width: 100px;
+    background-color: var(--accent-bg);
+    border-radius: 5px;
+    border: none;
+}

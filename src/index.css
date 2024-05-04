@@ -1,3 +1,31 @@
+:root {
+  --accent-bg: #f1d314;
+  /* light */
+  --main-bg-light: #ffffff;
+  --main-text-light: #000000;
+  --tile-bg-light: #ffffffbf;
+  --tile-shadow-light: 3px -2px 2px #979797;
+  /* dark */
+  --main-bg-dark: #2a2a38;
+  --main-text-dark: #ffffff;
+  --tile-bg-dark: #000000bf;
+  --tile-shadow-dark: 3px -2px 2px #a5a5a5;
+
+  [data-theme='light'] {
+    --main-bg: var(--main-bg-light);
+    --main-text: var(--main-text-light);
+    --tile-bg: var(--tile-bg-light);
+    --tile-shadow: var(--tile-shadow-light);
+  }
+
+  [data-theme='dark'] {
+    --main-bg: var(--main-bg-dark);
+    --main-text: var(--main-text-dark);
+    --tile-bg: var(--tile-bg-dark);
+    --tile-shadow: var(--tile-shadow-dark);
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +38,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
